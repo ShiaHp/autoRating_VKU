@@ -16,5 +16,5 @@ function autoRating(rating,message){
             areaValue[i].value = message
     }
 }
-autoRating(5,'tất cả đêù tuyệt vời')
+autoRating(3,'Okayy')
 
