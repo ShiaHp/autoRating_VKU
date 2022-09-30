@@ -3,6 +3,10 @@
 function autoRating(rating,message){
     const fixRating = rating + 1
     const indexOfLabel = document.getElementsByTagName("label")
+    const input = document.getElementsByTagName("input")
+    for(let i =1 ; i < input.length; i++) {
+       document.getElementById(input[i].id).required = false;
+    }
     for(let i = 0 ; i < indexOfLabel.length; i++){
         const indexofchild = i + 2
         const radioPath = `#demo-form2 > div:nth-child(${indexofchild}) > div:nth-child(${fixRating }) > div > div`
